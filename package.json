@@ -1,0 +1,32 @@
+{
+  "name": "toggle-switch",
+  "version": "0.0.1",
+  "description": "Toggle switch UI component",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve:examples": "parcel src/examples/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monocode-pl/toggle-switch.git"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "toggle",
+    "switch"
+  ],
+  "author": "Paweł Smoleński",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monocode-pl/toggle-switch/issues"
+  },
+  "homepage": "https://github.com/monocode-pl/toggle-switch#readme",
+  "dependencies": {
+    "angular": "^1.7.8"
+  },
+  "devDependencies": {
+    "less": "^3.9.0"
+  }
+}
