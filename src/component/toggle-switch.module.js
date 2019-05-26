@@ -2,6 +2,7 @@ import angular from 'angular';
 import {ToggleSwitchComponent} from "./toggle-switch.component";
 
 const ToggleSwitchModule = angular.module('monocode.toggle-switch', [])
-    .component('toggleSwitch', ToggleSwitchComponent);
+    .component('toggleSwitch', ToggleSwitchComponent)
+    .name;
 
-export default ToggleSwitchModule.name;
+export {ToggleSwitchModule};
