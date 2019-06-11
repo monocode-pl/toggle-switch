@@ -1,6 +1,8 @@
 import angular from 'angular';
-import {ToggleSwitchModule} from '../component/toggle-switch.module';
+import {ToggleSwitchModule} from '@monocode/toggle-switch';
 import {MainController} from "./main.controller";
 
 angular.module('example', [ToggleSwitchModule])
-    .controller('MainController', MainController);
+  .controller('MainController', MainController);
+
+console.log('init');
