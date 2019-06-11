@@ -1,3 +1,1 @@
-import {ToggleSwitchModule} from './component/toggle-switch.module';
-
-export {ToggleSwitchModule};
+export * from './component/toggle-switch.module';
