@@ -1,3 +1,5 @@
 .idea/
 .cache/
 src/
+examples/
+webpack.config.js
