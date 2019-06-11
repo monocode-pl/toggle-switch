@@ -1,6 +1,6 @@
 {
   "name": "@monocode/toggle-switch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Toggle switch UI component",
   "main": "dist/index.js",
   "scripts": {
