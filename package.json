@@ -4,8 +4,8 @@
   "description": "Toggle switch UI component",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve:examples": "parcel src/examples/index.html"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,12 @@
     "angular": "^1.7.8"
   },
   "devDependencies": {
+    "css-loader": "^2.1.1",
     "cssnano": "^4.1.10",
-    "less": "^3.9.0"
+    "html-loader": "^0.5.5",
+    "less": "^3.9.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.2"
   }
 }
