@@ -8,6 +8,9 @@ const ToggleSwitchComponent = {
   controller: ToggleSwitchController,
   require: {
     ngModel: 'ngModel'
+  },
+  bindings: {
+    size: '@'
   }
 };
 

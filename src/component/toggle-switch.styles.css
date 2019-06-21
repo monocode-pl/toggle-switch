@@ -1,14 +1,36 @@
 toggle-switch {
+  --tgs-height: 40px;
+  --tgs-width: 80px;
+  --tgs-font-size: 12px;
+
   display: grid;
-  border-radius: 25px;
+  border-radius: calc(var(--tgs-height) / 2);
   overflow: hidden;
   user-select: none;
   font-family: Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: var(--tgs-font-size);
   color: #f0f0f0;
   cursor: pointer;
-  height: 50px;
-  width: 110px;
+  height: var(--tgs-height);
+  width: var(--tgs-width);
+}
+
+.toggle-switch--size-sm {
+  --tgs-height: 30px;
+  --tgs-width: 60px;
+  --tgs-font-size: 10px;
+}
+
+.toggle-switch--size-lg {
+  --tgs-height: 50px;
+  --tgs-width: 110px;
+  --tgs-font-size: 16px;
+}
+
+.toggle-switch--size-xlg {
+  --tgs-height: 60px;
+  --tgs-width: 140px;
+  --tgs-font-size: 18px;
 }
 
 .toggle-switch-container {
@@ -31,11 +53,11 @@ toggle-switch {
 
 .toggle-switch-left {
   background: #30c98e;
-  margin-left: -25px;
+  margin-left: calc(var(--tgs-height) / 2 * -1);
 }
 
 .off .toggle-switch-left {
-  margin-left: calc(-50% + 25px);
+  margin-left: calc(-50% + var(--tgs-height) / 2);
 }
 
 .toggle-switch-right {
@@ -48,12 +70,12 @@ toggle-switch {
 
 .toggle-switch-handle:after {
   content: '';
-  width: 50px;
-  height: 50px;
+  width: var(--tgs-height);
+  height: var(--tgs-height);
   border-radius: 50%;
   background: #fcfcfc;
   box-shadow: 0 0 1px 1px inset #e5e0e0;
   display: block;
   position: absolute;
-  left: -25px;
+  left: calc(var(--tgs-height) / 2 * -1);
 }

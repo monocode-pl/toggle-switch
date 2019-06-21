@@ -27,6 +27,9 @@ class ToggleSwitchController {
   render() {
     this.$element.toggleClass('on', this.viewValue);
     this.$element.toggleClass('off', !this.viewValue);
+    this.$element.toggleClass('toggle-switch--size-sm', this.size === 'sm');
+    this.$element.toggleClass('toggle-switch--size-lg', this.size === 'lg');
+    this.$element.toggleClass('toggle-switch--size-xlg', this.size === 'xlg');
   }
 }
 

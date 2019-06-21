@@ -7,7 +7,22 @@
 <body ng-app="example" ng-controller="MainController as $ctrl">
 
 <input type="checkbox" ng-model="$ctrl.user.enabled"/>
-<toggle-switch ng-model="$ctrl.user.enabled"></toggle-switch>
+
+<section>
+  <h2 class="section-title">Sizes</h2>
+  <p>
+    To change the size of toggle switch use <code>size</code> attribute. You can pick one of 4 predefined values:
+    <code>sm</code>, <code>md</code> (default), <code>lg</code> and <code>xlg</code>.
+  </p>
+  <div class="layout-horizontal">
+    <toggle-switch ng-model="$ctrl.user.enabled" size="sm"></toggle-switch>
+    <toggle-switch ng-model="$ctrl.user.enabled" size="md"></toggle-switch>
+    <toggle-switch ng-model="$ctrl.user.enabled" size="lg"></toggle-switch>
+    <toggle-switch ng-model="$ctrl.user.enabled" size="xlg"></toggle-switch>
+  </div>
+</section>
+
+
 
 </body>
 </html>
