@@ -1,7 +1,7 @@
 # toggle-switch
+![toggle-switch image](docs/toggle-switch.gif)
 
 Simple and clean toggle switch control.
-![toggle-switch image](docs/toggle-switch.png)
 
 ## Installation
 
