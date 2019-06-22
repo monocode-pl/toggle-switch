@@ -1,3 +1,5 @@
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
+
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
@@ -20,8 +22,15 @@ module.exports = {
         use: [
           'html-loader'
         ]
+      },
+      {
+        test: /\.js$/,
+        use: [
+          'babel-loader'
+        ]
       }
     ]
   },
+  plugins: [new CleanWebpackPlugin()],
   devtool: "source-map"
 };

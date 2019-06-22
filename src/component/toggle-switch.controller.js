@@ -1,5 +1,7 @@
 class ToggleSwitchController {
   constructor($element) {
+    'ngInject';
+
     this.$element = $element;
   }
 
