@@ -6,5 +6,3 @@ import './main.css';
 
 angular.module('example', [ToggleSwitchModule])
   .controller('MainController', MainController);
-
-console.log('init');
