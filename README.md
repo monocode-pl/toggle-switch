@@ -19,7 +19,7 @@ angular.module('myApp', [ToggleSwitchModule]);
 ```
 
 ## Configuration
-###model
+### model
 toggle-switch utilizes `ngModel` directive, so you can use it like any other input control.
 ```html
 <toggle-switch ng-model="user.active"></toggle-switch>
@@ -30,7 +30,7 @@ You can specify additional properties using `ngModelOptions`
                ng-model-options="{debounce: 500}"></toggle-switch>
 ```
 
-###size
+### size
 toggle-switch comes in 4 predefined sizes: `sm`, `md` (default), `lg` and `xlg`. 
 You can change the size using `size` attribute.
 
@@ -38,7 +38,7 @@ You can change the size using `size` attribute.
 <toggle-switch ng-model="user.active" 
                size="sm"></toggle-switch>
 ```
-###disable/enable
+### disable/enable
 toggle-switch supports `disable` attribute. 
 If the attribute is set, control will not accept any user input.
 
