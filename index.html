@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Toggle Switch</title>
+</head>
+<body ng-app="example" ng-controller="MainController as $ctrl">
+
+<input type="checkbox" ng-model="$ctrl.user.enabled"/>
+
+<section>
+  <h2 class="section-title">Sizes</h2>
+  <p>
+    To change the size of toggle switch use <code>size</code> attribute. You can pick one of 4 predefined values:
+    <code>sm</code>, <code>md</code> (default), <code>lg</code> and <code>xlg</code>.
+  </p>
+  <div class="layout-horizontal">
+    <toggle-switch ng-model="$ctrl.user.enabled" size="sm"></toggle-switch>
+    <toggle-switch ng-model="$ctrl.user.enabled" size="md"></toggle-switch>
+    <toggle-switch ng-model="$ctrl.user.enabled" size="lg"></toggle-switch>
+    <toggle-switch ng-model="$ctrl.user.enabled" size="xlg"></toggle-switch>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Disabling</h2>
+  <p>
+    To disable or enable toggle switch conditionally use <code>ng-disable</code> directive.
+  </p>
+  <div class="layout-horizontal">
+    <toggle-switch ng-model="$ctrl.user.enabled" ng-disabled="true">
+  </div>
+</section>
+
+
+
+<script type="text/javascript" src="runtime~main.7cc2923c6eef5d2507f5.js"></script><script type="text/javascript" src="vendors~main.f9f5af59f10c7414c354.js"></script><script type="text/javascript" src="main.8ea990d99ec5efe4db3f.js"></script></body>
+</html>
