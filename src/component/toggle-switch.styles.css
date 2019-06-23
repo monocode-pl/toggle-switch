@@ -2,6 +2,8 @@ toggle-switch {
   --tgs-height: 40px;
   --tgs-width: 80px;
   --tgs-font-size: 12px;
+  --background-left: #30c98e;
+  --background-right: #ff6c4f;
 
   display: grid;
   border-radius: calc(var(--tgs-height) / 2);
@@ -13,6 +15,13 @@ toggle-switch {
   cursor: pointer;
   height: var(--tgs-height);
   width: var(--tgs-width);
+  box-shadow: 0 0 1px 1px #ede8e8;
+}
+
+toggle-switch[disabled] {
+  --background-left: #9fc7b6;
+  --background-right: #ffd2cc;
+  pointer-events: none;
 }
 
 .toggle-switch--size-sm {
@@ -52,7 +61,7 @@ toggle-switch {
 }
 
 .toggle-switch-left {
-  background: #30c98e;
+  background: var(--background-left);
   margin-left: calc(var(--tgs-height) / 2 * -1);
 }
 
@@ -61,7 +70,7 @@ toggle-switch {
 }
 
 .toggle-switch-right {
-  background: #ff6c4f;
+  background: var(--background-right);
 }
 
 .toggle-switch-handle {
@@ -79,3 +88,4 @@ toggle-switch {
   position: absolute;
   left: calc(var(--tgs-height) / 2 * -1);
 }
+
